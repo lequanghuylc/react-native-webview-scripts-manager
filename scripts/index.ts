@@ -14,7 +14,7 @@ export type GetScriptOptions = {
 
 class ScriptManager {
 
-  remoteLogChannel = `${new Date().getTime()}-${String(Math.random()).slice(0,5)}`;
+  remoteLogChannel;
 
   async getScripts(options : GetScriptOptions) : Promise<InjectedScripts> {
     if (!options) throw new Error('options is undefined');
@@ -44,30 +44,40 @@ class ScriptManager {
     for (let src in scripts) {
       combinedScript = `
         ${combinedScript}
-        if (window.RouteParseRN("${src}", "${window.location.href}")) {
+        if (window.RouteParseRN("${src}", window.location.href)) {
           ${scripts[src]}
         }
       `
     }
 
-    console.log(`Remote Log: https://console.re/${this.remoteLogChannel}`);
+    !!this.remoteLogChannel && console.log(`Remote Log: https://console.re/${this.remoteLogChannel}`);
 
     //@ts-ignore
-    return __DEV__ ? `
-      ${localLibraries}
-      ${remoteLog(this.remoteLogChannel)}
-      consolere.ready(function() {
-        console.re.log('Device connected');
+    return `
+    (function(lol){
+      ${__DEV__ && !!this.remoteLogChannel ? `
+        ${localLibraries}
+        ${remoteLog(this.remoteLogChannel)}
+        consolere.ready(function() {
+          console.re.log('Device connected', window.location.href);
+          setTimeout(function() {
+            try {
+              ${combinedScript}
+            } catch(err) {
+              alert(err);
+            }
+          }, 1500);
+        });
+        
+      ` : `
+        ${localLibraries}
         setTimeout(function() {
           ${combinedScript}
         }, 500);
-      });
-    ` : `
-      ${localLibraries}
-      setTimeout(function() {
-        ${combinedScript}
-      }, 500);
-    `;
+      `}
+    })()
+    `
+    
   }
 }
 

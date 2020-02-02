@@ -2,7 +2,7 @@
   "name": "react-native-webview-scripts-manager",
   "version": "0.1.0",
   "description": "Remote injected scripts for React Native Webview, for the easy of developing and debugging",
-  "main": "index.ts",
+  "main": "index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

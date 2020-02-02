@@ -1,0 +1,4 @@
+{
+  "https://www.google.com/": "console.re.log(\"Hello world, I'm at google.com\");",
+  "https://example.com/": "console.re.log(\"Hello world, I'm at example.com\");"
+}
