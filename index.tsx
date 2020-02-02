@@ -22,7 +22,7 @@ export default class Webview extends Component<Props> {
     injectedJavaScript: '',
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.getScripts();
   }
 
