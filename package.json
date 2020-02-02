@@ -1,6 +1,6 @@
 {
   "name": "react-native-webview-scripts-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Remote injected scripts for React Native Webview, for the easy of developing and debugging",
   "main": "index.tsx",
   "scripts": {
