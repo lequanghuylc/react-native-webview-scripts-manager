@@ -5202,7 +5202,7 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
 
 "react-native-webview-scripts-manager@git+https://git@github.com/lequanghuylc/react-native-webview-scripts-manager.git":
   version "0.1.0"
-  resolved "git+https://git@github.com/lequanghuylc/react-native-webview-scripts-manager.git#001ea025c22e380374eb2aa925370e57d45bbf54"
+  resolved "git+https://git@github.com/lequanghuylc/react-native-webview-scripts-manager.git#9902d7f5581e1c7057e88ed3b732854c1bb65489"
   dependencies:
     react "^16.12.0"
     react-native "^0.61.5"
