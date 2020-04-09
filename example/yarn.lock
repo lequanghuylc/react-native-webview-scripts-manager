@@ -1111,9 +1111,9 @@ acorn-walk@^6.0.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^5.5.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1:
   version "6.4.0"
@@ -5010,10 +5010,10 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-native-webview-scripts-manager@^0.1.1:
+"react-native-webview-scripts-manager@git+https://git@github.com/lequanghuylc/react-native-webview-scripts-manager.git":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-webview-scripts-manager/-/react-native-webview-scripts-manager-0.1.1.tgz#d5c5072cd8613397b698b839e560f7cdfe7a343a"
-  integrity sha512-HZLnRblJOj512sQlw1vIfNf4b8c4kYF0XVCUYq1RNr65bieHkqVI9PUkKmR9lb54faMD/Cn9xz+xpOmNgW+yhQ==
+  uid "3a8abe544d4c8ade0511313bd2088550aaf91535"
+  resolved "git+https://git@github.com/lequanghuylc/react-native-webview-scripts-manager.git#3a8abe544d4c8ade0511313bd2088550aaf91535"
   dependencies:
     react "^16.12.0"
     react-native "^0.61.5"
